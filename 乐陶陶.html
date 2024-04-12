@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <title>乐陶陶</title>
+  <style>
+    body {
+      background-image: url('D:\乐陶陶4.png');
+      background-size: cover;
+      font-family: '楷体';
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      color: black; /* 将文本颜色设置为黑色 */
+    }
+    h2, h3 {
+      margin: 20px 0;
+    }
+    .center {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 800px; /* 限制最大宽度 */
+    }
+    .button-container a {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      border: 2px solid black; /* 将边框颜色设置为黑色 */
+      border-radius: 25px;
+      color: black; /* 将链接文字颜色设置为黑色 */
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .button-container a:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      transition: all 0.3s ease;
+      transform: translate(-50%, -50%) rotate(45deg);
+      z-index: -1;
+    }
+    .button-container a:hover {
+      background-color: white; /* 悬停时背景变为白色 */
+      color: black; /* 文字颜色保持黑色 */
+      text-shadow: 0 0 5px white; /* 悬停时添加白色文字阴影 */
+      border-color: white;
+    }
+    .button-container a:hover:before {
+      width: 120%;
+      height: 120%;
+      opacity: 1;
+      top: -10%;
+      left: -10%;
+      transform: translate(-50%, -50%);
+    }
+	  .button-container p {
+      display: inline-block;
+      padding: 10px 20px; /* 添加内边距 */
+      margin: 5px; /* 设置元素之间的外边距 */
+      border: 2px solid black; /* 添加黑色边框 */
+      border-radius: 4px; /* 微调圆角，如果你想要纯粹的方块效果，可以设置为0 */
+      text-align: center; /* 文本居中 */
+      cursor: pointer; /* 鼠标悬停时显示手形指针 */
+      transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
+    }
+    .button-container p:hover {
+      background-color: black; /* 悬停时背景变为黑色 */
+      color: white; /* 悬停时文字变为白色 */
+      transform: scale(1.05); /* 悬停时稍微放大 */
+    }
+  </style>
+</head>
+<body>
+  <h2 class="center"><strong>欢迎来到乐陶陶</strong></h2>
+<h3 class="center">让我来为你介绍</h3>
+  <div class="button-container">
+    <a href="file:///C|/Users/86152/Documents/未命名站点 2/文物历史.html">文物历史</a>
+    <a href="file:///C|/Users/86152/Documents/未命名站点 2/推荐文物.html">推荐文物</a>
+    <a href="file:///C|/Users/86152/Documents/未命名站点 2/浏览路线.html">浏览路线</a>
+    <a href="file:///C|/Users/86152/Documents/未命名站点 2/购物中心.html">购物中心</a>
+  </div>
+  <div class="button-container">
+    <a href="file:///C|/Users/86152/Documents/未命名站点 2/社区.html">社区</a>
+    <a href="file:///C|/Users/86152/Documents/未命名站点 2/个人中心.html">个人中心</a>
+  </div>
+<div class="button-container">
+  <h3>请选择人物&nbsp;</h3>
+  <h3>请选择交流方式&nbsp;</h3>
+</div>
+<div class="button-container">
+     <p>&nbsp;用户&nbsp;</p>
+    <p>语音交互</p>
+</div>
+<div class="button-container">
+    <p>乐陶陶</p>
+    <p>文字交互</p>
+  </div>
+</body>
+</html>
